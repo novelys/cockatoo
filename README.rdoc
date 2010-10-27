@@ -1,6 +1,6 @@
 = Cockatoo
 
-Cockatoo is a simple chat server. It's coded in Ruby with the help of the fantastic EventMachine.
+Cockatoo is a simple chat server. It's coded in Ruby with the help of the fantastic EventMachine[http://rubyeventmachine.com/].
 
 There are several techniques to handle the real-time web, but we decided to use the Long Polling technique.
 It works with plenty of browsers.
@@ -72,5 +72,11 @@ And in Apache :
 
 == Copyright
 
-Copyright (c) 2010 {Yann Klis}[http://blog.strasslab.net] and Novelys[http://www.novelys.com]. See LICENSE[http://github.com/novelys/cockatoo/raw/master/LICENSE] for details.
+Copyright (c) 2010 Novelys[http://www.novelys.com]. See LICENSE[http://github.com/novelys/cockatoo/raw/master/LICENSE] for details.
+
+== Contributors
+
+ * {Yann Klis}[http://github.com/yannski] inital work and packaging
+ * {Sébastien Pierre}[http://github.com/sebastien] client side HTML and CSS
+ * {Nicolas Blanco}[http://github.com/slainer68]
 
