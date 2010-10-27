@@ -76,7 +76,7 @@ Copyright (c) 2010 Novelys[http://www.novelys.com]. See LICENSE[http://github.co
 
 == Contributors
 
- * {Yann Klis}[http://github.com/yannski] inital work and packaging
- * {Sébastien Pierre}[http://github.com/sebastien] client side HTML and CSS
- * {Nicolas Blanco}[http://github.com/slainer68]
+* {Yann Klis}[http://github.com/yannski] inital work and packaging
+* {Sébastien Pierre}[http://github.com/sebastien] client side HTML and CSS
+* {Nicolas Blanco}[http://github.com/slainer68]
 
