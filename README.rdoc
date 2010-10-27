@@ -45,6 +45,29 @@ stop the server
 restart the server
   cockatoo restart
 
+You will need an HTTP server in front of your Ruby/Rails app and your chat server.
+
+In Nginx, you will have to add something like the following to your configuration file :
+
+  server {
+    listen 80;
+    server_name mywebapp.com;
+    root /home/rails/www/lollidays/current/public;
+    passenger_enabled on;
+
+    location /chat {
+      proxy_pass        http://mychatserver:8000;
+      proxy_set_header  X-Real-IP  $remote_addr;
+    }
+  }
+
+And in Apache :
+
+  ProxyPass          /chat http://mychatserver:8000
+  ProxyPassReverse   /chat http://mychatserver:8000
+  ProxyPreserveHost  On
+
+
 == Copyright
 
 Copyright (c) 2010 Yann Klis. See LICENSE[http://github.com/novelys/cockatoo/raw/master/LICENSE] for details.
