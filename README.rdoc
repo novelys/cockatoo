@@ -1,0 +1,51 @@
+= Cockatoo
+
+Cockatoo is a simple chat server. It's coded in Ruby with the help of the fantastic EventMachine.
+
+There are several techniques to handle the real-time web, but we decided to use the Long Polling technique.
+It works with plenty of browsers.
+
+* homepage[http://github.com/novelys/cockatoo]
+
+== Server part
+
+The server part is coded in Ruby and EventMachine. The protocol is pretty straightforward.
+
+== Client part
+
+You can use any client part you want.
+We provide 3 components so you can setup a simple chat system in any Ruby/Rails app you're working on :
+*  _chat_initialization[http://github.com/novelys/cockatoo/raw/master/extra/_chat_initialization.html.haml] HAML template
+* _chat[http://github.com/novelys/cockatoo/raw/master/extra/_chat.html.haml] HAML template
+* chat.js[http://github.com/novelys/cockatoo/raw/master/extra/chat.js] is the javascript client library (you will need jQuery[http://jquery.com])
+
+Just include the 2 templates and the javascript lib in your layout and you'll be good to go.
+
+Here are two screenshots of the client side in action :
+* http://www.novelys.com/assets/Gallery/Lollidays/BigFrame5.png
+* http://www.novelys.com/assets/Gallery/TheSphere/BigFrame3.png
+
+== Installation
+
+  gem install cockatoo
+
+== Usage
+
+Beware that you'll need a "log" directory located where you will run cockatoo.
+
+start the server (by default it will run on the 8000 port)
+cockatoo start
+
+start the server on the 9000 port
+cockatoo start -- 9000
+
+stop the server
+cockatoo stop
+
+restart the server
+cockatoo restart
+
+== Copyright
+
+Copyright (c) 2010 Yann Klis. See LICENSE[http://github.com/novelys/cockatoo/raw/master/LICENSE] for details.
+

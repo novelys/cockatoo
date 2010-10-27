@@ -1,0 +1,6 @@
+Manifest
+Rakefile
+bin/cockatoo
+cockatoo.gemspec
+lib/cockatoo_daemon.rb
+lib/cockatoo_http_server.rb

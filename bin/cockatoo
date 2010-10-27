@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'daemons'
+
+file = File.join(File.expand_path(__FILE__), '..', '..', 'lib', 'cockatoo_daemon.rb')
+pwd = Dir.pwd
+Daemons.run(file,
+            :app_name => "cockatoo",
+            :backtrace => true,
+            :log_output => true,
+            :dir_mode => :normal,
+            :dir => File.join(pwd, "log")
+           )

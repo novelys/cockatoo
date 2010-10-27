@@ -1,0 +1,182 @@
+#ChatApplication.ChatApplication.is-chat
+  .body.csb-body
+    .applets
+      .FriendsApplet.bar-container
+        .Bubble.decoration.TEMPLATE.hidden
+          .header.bbl-header
+            .title
+              %span.out-title
+                [TITLE]
+              %span.date.out-date
+                [DATE]
+            .do-close.action
+              x
+          .body.bbl-body
+            .message
+              .icon.left
+                %img.author.out-author.P{ :src => "/images/user-avatar-default.png", :align => "absmiddle", :height => "60", :width => "60" }
+              .text.out-text
+                [TEXT]
+              .clearer
+                \&nbsp;
+          .footer.bbl-footer
+            .operations
+              %button.do-ok.out-ok.action.T
+                reply
+              %span.hsep-5
+              %button.do-cancel.out-cancel.action.T
+                decline
+            .tip
+              \&nbsp;
+        .FriendsList.SlidingPane.hidden
+          .header.fl-header
+            .title.T
+              My friends
+            %img.do-collapse.action.P{ :src => "/images/icon-collapse.png", :align => "absmiddle", :height => "16", :width => "16" }
+            .clearer
+              \&nbsp;
+          .body.fl-body
+            %ul.friends
+              %li.when-empty.when-service_available
+                .message.when-empty
+                  %span.text.T
+                    No online friend
+              %li.when-not_service_available.hidden
+                .message
+                  %span.text.T
+                    No service
+                  /%button.action.do-reconnect.T
+                  /  reconnect
+                  .clearer
+                    \&nbsp;
+            .clearer
+              \&nbsp;
+          .footer.TEMPLATES
+            %ul
+              %li.friend-element.when-service_available
+                .friend
+                  .left
+                    %img.icon.out-picture.P{ :src => "/images/user-avatar-default.png", :align => "absmiddle", :height => "30", :width => "30" }
+                  .name.out-name
+                    NAME
+                  .status.out-status
+                    STATUS
+                  %span.when-not_in_discussion.hidden
+                    %button.do-invite.action.T
+                      invite
+                  %span.when-in_discussion
+                    %button.do-seeChat.action.T
+                      chat
+                  .clearer
+                    \&nbsp;
+        .UserStatus.StatusBar
+          .body.us-body
+            .info
+              %img.P{ :src => "/images/icon-contact.png", :align => "absmiddle", :height => "16", :width => "16" }
+              %span
+                %span.hi
+                  %span.out-onlineFriends
+                    0
+                  %span.T.out-onlineFriendsLabel
+                    friends
+                %span
+                %span.T
+                  online
+            .toggle
+              %img.do-expand.action.when-not_expanded.P{ :src => "/images/icon-expand.png", :align => "absmiddle", :height => "16", :width => "16" }
+              %img.do-collapse.action.when-expanded.hidden.P{ :src => "/images/icon-collapse.png", :align => "absmiddle", :height => "16", :width => "16" }
+    .clearer
+      \&nbsp;
+  .footer.TEMPLATES
+    .DiscussionApplet.bar-container
+      .Bubble.decoration.TEMPLATE.hidden
+        .header.bbl-header
+          .title
+            %span.out-title
+              [TITLE]
+            %span.date.out-date
+              [DATE]
+          .do-close.action
+            x
+        .body.bbl-body
+          .message
+            .icon.left
+              %img.author.out-author.P{ :src => "/images/user-avatar-default.png", :align => "absmiddle", :height => "60", :width => "60" }
+            .text.out-text
+              [TEXT]
+            .clearer
+              \&nbsp;
+        .footer.bbl-footer
+          .operations
+            %button.do-ok.out-ok.action.T
+              reply
+            %span.hsep-5
+            %button.do-cancel.out-cancel.action.T
+              decline
+          .tip
+            \&nbsp;
+      .ChatLog.SlidingPane.decoration.hidden
+        .header.cl-header
+          .icon.left
+            %img.out-withPicture.P{ :src => "/images/user-avatar-default.png", :align => "absmiddle", :height => "45", :width => "45" }
+          .name.out-withName
+            NAME
+          .status.out-withStatus
+            STATUS
+          %img.do-collapse.action.P{ :src => "/images/icon-collapse.png", :align => "absmiddle", :height => "16", :width => "16" }
+          %img.do-close-discussion.action.P{ :src => "/images/icon-close.png", :align => "absmiddle", :height => "16", :width => "16" }
+          .clearer
+            \&nbsp;
+        .header.cl-header-2
+          .left
+            .discussionStatus
+              %span.out
+                // TODO : find something interesting to display here...
+                &nbsp;
+          .right
+            %span.on-state.when-initiated.when-accepted.when-active.when-inactive.hidden
+              %button.do-endDiscussion.action.T
+                end
+            %span.on-state.when-ended.when-cancelled.when-declined.hidden
+              %button.do-closeDiscussion.action.T
+                close
+          .clearer
+            \&nbsp;
+        .body.cl-body
+          %ul.messages.is-empty
+            %li.when-empty.hidden
+          .TEMPLATES
+            %ul
+              %li
+                .message
+                  .header
+                    .left.out.name
+                      NAME
+                    .right.out.date
+                      HHhMM
+                  .body.out.text
+                    TEXT
+        .footer.cl-footer
+          .on-state.when-initiated.when-accepted.when-active.when-inactive
+            %input.in-message{ :type => "text" }
+            %button.do-writeMessage.action
+              %img.action.P{ :src => "/images/icon-bubble_and_shadow.png", :align => "absmiddle", :height => "16", :width => "16" }
+          .on-state.when-ended.when-cancelled.when-declined.hidden
+            %span.T
+              discussion ended
+      .ChatStatus.StatusBar
+        .body.us-body
+          .info
+            %img.P{ :src => "/images/icon-bubble.png", :align => "absmiddle", :height => "16", :width => "16" }
+            %span
+              %span.hi
+                %span.out-withName
+                  NAME
+              \:
+              %span.out-messageCount
+                0
+              %span.T
+                messages
+          .toggle.action
+            %img.do-expand.when-not_expanded.hidden.action.P{ :src => "/images/icon-expand.png", :align => "absmiddle", :height => "16", :width => "16" }
+            %img.do-collapse.when-expanded.action.P{ :src => "/images/icon-collapse.png", :align => "absmiddle", :height => "16", :width => "16" }
