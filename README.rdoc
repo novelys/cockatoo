@@ -5,7 +5,7 @@ Cockatoo is a simple chat server. It's coded in Ruby with the help of the fantas
 There are several techniques to handle the real-time web, but we decided to use the Long Polling technique.
 It works with plenty of browsers.
 
-If you don't know EventMachine and Long Polling, maybe you can read ["Long Polling with Event Machine"][http://www.slideshare.net/novelys/long-polling-with-event-machine].
+If you don't know EventMachine and Long Polling, maybe you can read {"Long Polling with Event Machine"}[http://www.slideshare.net/novelys/long-polling-with-event-machine].
 
 * homepage[http://github.com/novelys/cockatoo]
 
@@ -72,5 +72,5 @@ And in Apache :
 
 == Copyright
 
-Copyright (c) 2010 [Yann Klis][http://blog.strasslab.net] and Novelys[http://www.novelys.com]. See LICENSE[http://github.com/novelys/cockatoo/raw/master/LICENSE] for details.
+Copyright (c) 2010 {Yann Klis}[http://blog.strasslab.net] and Novelys[http://www.novelys.com]. See LICENSE[http://github.com/novelys/cockatoo/raw/master/LICENSE] for details.
 
