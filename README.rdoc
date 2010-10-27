@@ -34,16 +34,16 @@ Here are two screenshots of the client side in action :
 Beware that you'll need a "log" directory located where you will run cockatoo.
 
 start the server (by default it will run on the 8000 port)
-cockatoo start
+  cockatoo start
 
 start the server on the 9000 port
-cockatoo start -- 9000
+  cockatoo start -- 9000
 
 stop the server
-cockatoo stop
+  cockatoo stop
 
 restart the server
-cockatoo restart
+  cockatoo restart
 
 == Copyright
 
