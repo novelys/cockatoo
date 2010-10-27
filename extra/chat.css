@@ -1,0 +1,503 @@
+.ChatApplication {
+  color: #7196c2;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  border: 0px solid transparent;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: auto;
+  z-index: 203;
+}
+
+.ChatApplication .csb-body {
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+.ChatApplication .bar-container {
+  position: relative;
+  z-index: 201;
+  float: right;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+.ChatApplication .bar-container .with-focus {
+  z-index: 202 !important;
+}
+
+.ChatApplication div,
+.ChatApplication span,
+.ChatApplication ul,
+.ChatApplication li,
+.ChatApplication h1,
+.ChatApplication h2,
+.ChatApplication h3,
+.ChatApplication h4,
+.ChatApplication h5,
+.ChatApplication h6,
+.ChatApplication button,
+.ChatApplication a,
+.ChatApplication img,
+.ChatApplication input,
+.ChatApplication form .is-chat {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  border: 0px solid transparent;
+  background: transparent;
+  width: auto;
+  float: none;
+  overflow: visible;
+  position: static;
+  text-align: left;
+}
+
+.ChatApplication div,
+.ChatApplication ul,
+.ChatApplication li,
+.ChatApplication h1,
+.ChatApplication h2,
+.ChatApplication h3,
+.ChatApplication h4,
+.ChatApplication h5,
+.ChatApplication h6,
+.ChatApplication form {
+  display: block;
+}
+
+.ChatApplication div,
+.ChatApplication span,
+.ChatApplication ul,
+.ChatApplication li,
+.ChatApplication h1,
+.ChatApplication h2,
+.ChatApplication h3,
+.ChatApplication h4,
+.ChatApplication h5,
+.ChatApplication h6,
+.ChatApplication button,
+.ChatApplication a,
+.ChatApplication img,
+.ChatApplication input,
+.ChatApplication .is-chat {
+  display: span;
+}
+
+.ChatApplication .left {
+  float: left;
+}
+
+.ChatApplication .hi {
+  font-weight: bold;
+}
+
+.ChatApplication .hsep-5 {
+  padding-right: 5px;
+}
+
+.ChatApplication .hidden {
+  display: none;
+}
+
+.ChatApplication .TEMPLATES {
+  display: none !important;
+}
+
+.ChatApplication .clearer {
+  clear: both;
+  height: 0px;
+}
+
+.ChatApplication button {
+  padding: 2px;
+  background: #3cbae4;
+  border: 1px solid #0e4475;
+  border-bottom: 2px solid #0e4475;
+  border-right: 2px solid #0e4475;
+  cursor: pointer;
+}
+
+.ChatApplication button:hover {
+  background: #79d4f2;
+}
+
+.ChatApplication .StatusBar {
+  position: relative;
+  width: 150px;
+  height: 22px;
+  border: 1px solid #0e4475;
+  margin-bottom: -2px;
+}
+
+.ChatApplication .StatusBar.is-expanded {
+  border-top: 0px solid #0e4475;
+}
+
+.ChatApplication .StatusBar.is-expanded .us-body {
+  border-top: 1px solid #0e4475;
+}
+
+.ChatApplication .StatusBar .us-body {
+  padding: 2px;
+  max-width: 150px;
+  background: #3cbae4;
+}
+
+.ChatApplication .StatusBar .us-body .info {
+  overflow: hidden;
+}
+
+.ChatApplication .StatusBar .us-body .toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 23px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: #3cbae4;
+}
+
+.ChatApplication .Bubble {
+  position: absolute;
+  bottom: 40px;
+  width: 300px;
+  margin-left: -149px;
+  z-index: 103;
+}
+
+.ChatApplication .Bubble .bbl-header {
+  border: 1px solid #0e4475;
+  border-bottom: 0px solid transparent;
+  background: #3cbae4;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.ChatApplication .Bubble .bbl-header .title {
+  font-weight: bold;
+}
+
+.ChatApplication .Bubble .bbl-header .title .date {
+  padding-left: 5px;
+  color: #dee9ef;
+  font-weight: normal;
+}
+
+.ChatApplication .Bubble .bbl-header .do-close {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.ChatApplication .Bubble .bbl-body {
+  border-left: 1px solid #0e4475;
+  border-right: 1px solid #0e4475;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  background: #79d4f2;
+}
+
+.ChatApplication .Bubble .bbl-body .icon img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ChatApplication .Bubble .bbl-body .text {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.ChatApplication .Bubble .bbl-footer {
+  position: relative;
+  border: 1px solid #0e4475;
+  border-top: 0px solid transparent;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #79d4f2;
+}
+
+.ChatApplication .Bubble .bbl-footer .operations {
+  text-align: right;
+}
+
+.ChatApplication .Bubble .bbl-footer .tip {
+  position: absolute;
+  bottom: -24px;
+  width: 24px;
+  left: 150px;
+  height: 24px;
+  background: url(/images/chat/bubble-tip.png) no-repeat;
+}
+
+.ChatApplication .ChatLog {
+  position: absolute;
+  bottom: 20px;
+  width: 300px;
+  margin-left: -146px;
+}
+
+.ChatApplication .ChatLog .cl-header {
+  border: 1px solid #0e4475;
+  border-bottom: 0px solid #dee9ef;
+  background: #3cbae4;
+}
+
+.ChatApplication .ChatLog .cl-header .icon {
+  margin: 5px;
+  margin-right: 12px;
+}
+
+.ChatApplication .ChatLog .cl-header .name {
+  padding-top: 9px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ChatApplication .ChatLog .cl-header .status {
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+}
+
+.ChatApplication .ChatLog .cl-header .do-collapse {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.ChatApplication .ChatLog .cl-header .do-close-discussion {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.ChatApplication .ChatLog .cl-header-2 {
+  background: #79d4f2;
+  border-left: 1px solid #0e4475;
+  border-right: 1px solid #0e4475;
+  border-bottom: 0px solid #0e4475;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #dee9ef;
+  font-size: 10px;
+}
+
+.ChatApplication .ChatLog .cl-header-2 .left {
+  float: left;
+  padding-top: 2px;
+}
+
+.ChatApplication .ChatLog .cl-header-2 .right {
+  float: right;
+}
+
+.ChatApplication .ChatLog .cl-header-2 .right button {
+  padding: 0px;
+  font-size: 9px;
+}
+
+.ChatApplication .ChatLog .cl-body {
+  border-left: 1px solid #0e4475;
+  border-right: 1px solid #0e4475;
+  background: #e6f7fd;
+  height: 300px;
+  overflow: auto;
+}
+
+.ChatApplication .ChatLog .cl-body ul {
+  background: #e6f7fd;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ChatApplication .ChatLog .cl-body ul.is-empty {
+  background: #79d4f2;
+}
+
+.ChatApplication .ChatLog .cl-body li {
+  background: #d6f2fb;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top:2px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3cbae4;
+  list-style-type: none;
+}
+
+.ChatApplication .ChatLog .cl-body li:last-child {
+  border-bottom: 1px solid #3cbae4;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.ChatApplication .ChatLog .cl-body li.placeholder {
+  display: none;
+}
+
+.ChatApplication .ChatLog .cl-body li .message .header {
+  color: #3cbae4;
+}
+
+.ChatApplication .ChatLog .cl-body li .message .header .left {
+  float: left;
+}
+
+.ChatApplication .ChatLog .cl-body li .message .header .right {
+  float: right;
+}
+
+.ChatApplication .ChatLog .cl-body li .message .body {
+  clear: both;
+  font-size: 12px;
+  font-style:italic;
+  color: #333;
+  padding-top:2px;
+}
+
+.ChatApplication .ChatLog .cl-body li.inbound .name,
+.ChatApplication .ChatLog .cl-body li.outbound .name,
+.ChatApplication .ChatLog .cl-body li .date {
+  color: #0e4475;
+  font-weight: bold;
+  font-size:9px;
+}
+
+.ChatApplication .ChatLog .cl-footer {
+  border: 1px solid #0e4475;
+  border-top: 0px solid transparent;
+  background: #3cbae4;
+  padding: 5px;
+}
+
+.ChatApplication .ChatLog .cl-footer .in-message {
+  position: relative;
+  bottom: -1px;
+  width: 254px;
+  padding: 2px;
+  background: #79d4f2;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #0e4475;
+  color:#0e4475;
+}
+
+.ChatApplication .ChatLog .cl-footer .in-message:focus {
+  background: #fffdf2;
+  color:#0e4475;
+}
+
+.ChatApplication .ChatLog .cl-footer button {
+  padding: 0px;
+}
+
+.ChatApplication .FriendsList {
+  position: absolute;
+  bottom: 20px;
+  width: 250px;
+  margin-left: -96px;
+}
+
+.ChatApplication .FriendsList .fl-header {
+  border: 1px solid #0e4475;
+  border-bottom: 1px solid #0e4475;
+  background: #3cbae4;
+}
+
+.ChatApplication .FriendsList .fl-header .title {
+  padding: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.ChatApplication .FriendsList .fl-header .do-collapse {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.ChatApplication .FriendsList .fl-body {
+  background: #79d4f2;
+  border: 1px solid #0e4475;
+  border-top: 0px solid transparent;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.ChatApplication .FriendsList .fl-body ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.ChatApplication .FriendsList .fl-body ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+.ChatApplication .FriendsList .fl-body ul li:hover {
+  background: #7196c2;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .message {
+  position: relative;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .message .action {
+  position: absolute;
+  right: -3px;
+  top: -4px;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .friend {
+  position: relative;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .friend .icon {
+  margin-right: 12px;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .friend .name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  padding-right: 40px;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .friend .status {
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  line-height: 15px;
+}
+
+.ChatApplication .FriendsList .fl-body ul li .friend .action {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}

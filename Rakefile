@@ -1,5 +1,5 @@
 require 'echoe'  
-Echoe.new('cockatoo', '0.0.1') do |p|
+Echoe.new('cockatoo', '0.1') do |p|
   p.summary        = "Cockatoo is a simple chat server"
   p.description    = "Cockatoo is a simple chat server coded with EventMachine and using the Long Polling technique"
   p.url            = "http://github.com/novelys/cockatoo"

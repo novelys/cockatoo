@@ -1,6 +1,12 @@
+LICENSE
 Manifest
+README.rdoc
 Rakefile
 bin/cockatoo
 cockatoo.gemspec
+extra/_chat.html.haml
+extra/_chat_initialization.html.haml
+extra/chat.css
+extra/chat.js
 lib/cockatoo_daemon.rb
 lib/cockatoo_http_server.rb
