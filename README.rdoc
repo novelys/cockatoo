@@ -19,7 +19,7 @@ You can use any client part you want.
 We provide 4 components so you can setup a simple chat system in any Ruby/Rails app you're working on :
 *  _chat_initialization[http://github.com/novelys/cockatoo/raw/master/extra/_chat_initialization.html.haml] HAML template
 * _chat[http://github.com/novelys/cockatoo/raw/master/extra/_chat.html.haml] HAML template
-* chat.js[http://github.com/novelys/cockatoo/raw/master/extra/chat.js] is the javascript client library (you will need jQuery[http://jquery.com])
+* chat.js[http://github.com/novelys/cockatoo/raw/master/extra/chat.js] is the javascript client library (you will need jQuery[http://jquery.com], ScrollTo[http://plugins.jquery.com/project/ScrollTo] and sprintf[http://www.diveintojavascript.com/projects/javascript-sprintf])
 * chat.css[http://github.com/novelys/cockatoo/raw/master/extra/chat.css] is the CSS stylesheet
 
 Just include the 2 templates and the javascript lib in your layout and you'll be good to go.
